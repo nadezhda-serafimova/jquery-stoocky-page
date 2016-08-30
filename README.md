@@ -28,7 +28,7 @@ Gif
 Add data attributes `data-item` to your menu items, with the name of the menu item.
 Example: `data-item="about"`
 
-```
+```html
 <nav>
     <ul class="main-menu">
         <li><a href="javascript:;" data-item="home">Home</a></li>
@@ -43,7 +43,8 @@ Example: `data-item="about"`
 ```
 
 Add `id` to every section, which will be linked.
-```
+
+```html
 <section id="about">
     <h1>About</h1>
     <p>Lorem ipsum dolor sit amet</p>
@@ -56,7 +57,7 @@ Now every menu item matches its section.
 
 Element to be fixed
 
-```
+```css
 .header {
     position: absolute;
 }
@@ -70,13 +71,13 @@ Element to be fixed
 
 Include the js-files which you can find in the assets folder.
 
-```
+```html
 <script src="path-to-your-file/jquery.min.js"></script>
 ```
 
 ##### 4. Include plugin - link
 
-```
+```html
 <script src="path-to-your-file/jquery.stoocky-page.min.js"></script>
 ```
 
@@ -84,13 +85,13 @@ Include the js-files which you can find in the assets folder.
 
 At the end of your page you need to initialize ..... by running the following code. Note that all config values are optional and will default as specified below.
 
-```
+```javascript
 $('body').stoockyPage();
 ```
 
 ##### 6. Default settings configuration
 
-```
+```javascript
 var settings = {
     stickyElem   : {
         active            : true,
@@ -133,7 +134,7 @@ var settings = {
 
 If you want to change some of the default values you need to add it to the initilisation, like this:
 
-```
+```javascript
 $('body').stoockyPage({
     stickyElem   : {
         active            : true,

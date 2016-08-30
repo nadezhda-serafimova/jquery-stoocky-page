@@ -1,4 +1,4 @@
-# Sticky header, smooth scroll and menu item highlighter
+# Sticky element, smooth scroll and menu item highlighter
 
 The plugin combains three specific components for single page front-end:
 - sticky element after scroll
@@ -7,7 +7,7 @@ The plugin combains three specific components for single page front-end:
 
 Every from these tasks  are independent. They can be used separate from each other on the page, together or in combination in two. Here you can see what they actually do together. You can choose which of the features suits to you.
 
-Gif
+GIF
 
 ## Demo
 
@@ -15,7 +15,7 @@ Gif
 
 ## Start the demo locally
 
-1. Clone the repo `git@gitlab.com:...` or [download](link)
+1. Clone the repo `git@github.com:nadezhda-devlabs/jquery-stoocky-page.git` or [download](https://github.com/nadezhda-devlabs/jquery-stoocky-page/archive/master.zip)
 2. Run `npm install`
 3. Run `gulp`
 4. Open `index.html` file in the browser and scroll

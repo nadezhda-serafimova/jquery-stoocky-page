@@ -1,0 +1,10 @@
+{
+  "private": true,
+  "devDependencies": {
+    "gulp-notify": "^2.2.0"
+  },
+  "dependencies": {
+    "gulp": "^3.9.1",
+    "laravel-elixir": "^5.0.0"
+  }
+}

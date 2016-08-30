@@ -1,0 +1,275 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+}
+img {
+    border: none;
+}
+a {
+    color: inherit;
+    text-decoration: none;
+}
+.group:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+.group {
+    display: inline-block;
+    clear: both;
+}
+/* start commented backslash hack \*/
+* html .group {
+    height: 1%;
+}
+.group {
+    display: block;
+}
+/* close commented backslash hack */
+html, body {
+    height: 100%;
+}
+body {
+    font-weight: 400;
+    color: #000;
+    background: #fff;
+    font-family: 'Open Sans', sans-serif;
+}
+.right {
+    float: right;
+}
+.left {
+    float: left;
+}
+.uppercase {
+    text-transform: uppercase;
+}
+.wrapper {
+    width: 1000px;
+    margin: 0 auto;
+    position: relative;
+}
+.text--center {
+    text-align: center;
+}
+.text--bold {
+    font-weight: 600;
+}
+.text--white {
+    color: #fff;
+}
+.text--basic {
+    color: #fd543f;
+}
+.mt20{
+    margin-top: 20px;
+}
+.mb20{
+    margin-bottom: 20px;
+}
+.body {
+    position: relative;
+    height: 100%;
+}
+.main-container {
+    height: 100%;
+    position: relative;
+}
+.header {
+    position: absolute;
+    width: 100%;
+    background: #fd543f;
+    z-index: 2;
+    transition: all .4s ease-in-out;
+}
+.header.header--fixed {
+    position: fixed;
+    top: 0;
+}
+.header.header--fixed-bottom {
+    position: fixed;
+    bottom: 0;
+}
+.section {
+    position: relative;
+    padding: 80px 0;
+    z-index: 1;
+    transition: all .4s ease-in-out;
+}
+.top-section {
+    background: url('../img/top-img.jpg') no-repeat 0 0;
+    background-size: cover;
+    background-attachment: fixed;
+    height: 100vh;
+}
+.section--white {
+    background: #fff;
+}
+.section--basic {
+    background: #ff7b6b;
+}
+.section--gray {
+    background: #ced9de;
+}
+.logo {
+    font-family: 'Baloo Chettan', cursive;
+    color: #fff;
+     text-shadow: 1px 1px 1px #000;
+}
+.logo--big {
+    position: fixed;
+    top: 100px;
+    left: 50%;
+    margin-left: -170px;
+    font-size: 50px;
+    line-height: 60px;
+    z-index: 0;
+}
+.logo--small {
+    font-size: 40px;
+    line-height: 62px;
+}
+.hamburger {
+    display: none;
+    padding: 17px 0;
+}
+.hamburger-inner, .hamburger-inner:after, .hamburger-inner:before {
+    background-color: #fff;
+}
+.main-menu > li {
+    list-style: none;
+    float: left;
+    padding: 20px 0;
+}
+.main-menu > li > a {
+    color: #fff;
+    font-size: 18px;
+    line-height: 18px;
+    text-transform: uppercase;
+    padding: 20px 0 20px 20px;
+    font-family: 'Baloo Chettan', cursive;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+}
+.main-menu > li > a:hover,
+.main-menu > li > a.active {
+    color: #560c02;
+}
+
+.cbp-spmenu {
+    background: #fd543f;
+    position: fixed;
+}
+.cbp-spmenu.mobile {
+    top: 63px;
+}
+.cbp-spmenu li {
+    list-style: none;
+}
+.cbp-spmenu a {
+    display: block;
+    color: #fff;
+    font-size: 16px;
+    line-height: 22px;
+    transition: all .4s ease-in-out;
+}
+.cbp-spmenu a:hover {
+    color: #560c02;
+}
+.cbp-spmenu a:active {
+    color: #560c02;
+}
+.cbp-spmenu-vertical {
+    width: 180px;
+    height: 100%;
+    top: 0;
+    z-index: 1000;
+}
+.cbp-spmenu-vertical a {
+    border-bottom: 1px solid #fff;
+    padding: 1em;
+}
+.cbp-spmenu-right {
+    right: -180px;
+}
+.cbp-spmenu-right.cbp-spmenu-open {
+    right: 0px;
+    box-shadow: -1px 0px 4px #464646;
+}
+.cbp-spmenu-push {
+    overflow-x: hidden;
+    position: relative;
+    left: 0;
+}
+
+.cbp-spmenu-push-toleft {
+    left: -180px;
+}
+.cbp-spmenu,
+.cbp-spmenu-push {
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+h1 {
+    position: relative;
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 600;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    font-family: 'Baloo Chettan', cursive;
+}
+h1:before {
+    content: "";
+    position: absolute;
+    width: 7%;
+    height: 1px;
+    bottom: 0;
+    left: 47%;
+    border-bottom: 2px solid #fd543f;
+}
+p {
+    font-size: 16px;
+    line-height: 26px;
+    margin-bottom: 20px;
+    text-align: justify;
+}
+
+.hidden {
+    display: none;
+}
+.non-visible {
+    opacity: 0;
+}
+
+.footer {
+    padding: 10px 0;
+    font-size: 12px;
+}
+
+@media screen and (max-width: 1000px) {
+    .wrapper {
+        width: 100%;
+    }
+    .row {
+        margin: 0;
+    }
+    .header.header--fixed {
+        right: 0;
+        z-index: 99;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .hamburger {
+        display: block;
+    }
+    .main-menu {
+        /*display: none;*/
+    }
+}

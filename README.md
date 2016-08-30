@@ -1,6 +1,6 @@
-# Sticky header and smooth scroll + hamburger menu for mobile
+# Sticky header, smooth scroll and menu item highlighter
 
-The plugin combains three secific components for single page front-end:
+The plugin combains three specific components for single page front-end:
 - sticky element after scroll
 - smooth scroll
 - menu item highlighter on scroll.
@@ -11,7 +11,7 @@ Gif
 
 ## Demo
 
-[Link](link)
+[Link](https://github.com/nadezhda-devlabs/jquery-stoocky-page)
 
 ## Start the demo locally
 
@@ -55,13 +55,10 @@ Now every menu item matches its section.
 ##### 2. CSS - Include the stylesheet
 
 Element to be fixed
+
 ```
 .header {
     position: absolute;
-    width: 100%;
-    background: #e23b26;
-    z-index: 2;
-    transition: all .4s ease-in-out;
 }
 .header.header--fixed {
     position: fixed;

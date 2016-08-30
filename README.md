@@ -23,7 +23,7 @@ Gif
 
 ## Basic Usage
 
-##### 1. HTML Structure
+#### 1. HTML Structure
 
 Add data attributes `data-item` to your menu items, with the name of the menu item.
 Example: `data-item="about"`
@@ -53,7 +53,7 @@ Add `id` to every section, which will be linked.
 
 Now every menu item matches its section.
 
-##### 2. CSS - Include the stylesheet
+#### 2. CSS - Include the stylesheet
 
 Element to be fixed
 
@@ -67,7 +67,7 @@ Element to be fixed
 }
 ```
 
-##### 3. Include jQuery
+#### 3. Include jQuery
 
 Include the js-files which you can find in the assets folder.
 
@@ -75,13 +75,13 @@ Include the js-files which you can find in the assets folder.
 <script src="path-to-your-file/jquery.min.js"></script>
 ```
 
-##### 4. Include plugin - link
+#### 4. Include plugin - link
 
 ```html
 <script src="path-to-your-file/jquery.stoocky-page.min.js"></script>
 ```
 
-##### 5. Initialize
+#### 5. Initialize
 
 At the end of your page you need to initialize ..... by running the following code. Note that all config values are optional and will default as specified below.
 
@@ -89,7 +89,7 @@ At the end of your page you need to initialize ..... by running the following co
 $('body').stoockyPage();
 ```
 
-##### 6. Default settings configuration
+#### 6. Default settings configuration
 
 ```javascript
 var settings = {
@@ -112,7 +112,7 @@ var settings = {
 };
 ```
 
-##### 7.Options
+#### 7.Options
 
 
 | Attribute                    | Type       | Default Value                   | Description                                                     |

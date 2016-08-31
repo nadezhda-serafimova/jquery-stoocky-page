@@ -126,3 +126,7 @@ deploy.php
 index-version-one.php
 index-version-two.php
 index-version-three.php
+/public
+.firebaserc
+database.rules.json
+firebase.json

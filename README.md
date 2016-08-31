@@ -12,6 +12,7 @@ Every from these tasks  are independent. They can be used separate from each oth
 ## Demo
 
 [Link](https://jquery-stoocky-page.firebaseapp.com/)
+
 Edit this demo on [JSFiddle](https://jsfiddle.net/3kohh4x8/6/)
 
 ## Start the demo locally
@@ -156,7 +157,3 @@ $('body').stoockyPage({
     }
 });
 ```
-
-## FAQ
-
-## Browser Support

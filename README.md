@@ -27,7 +27,7 @@ Edit this demo on [JSFiddle](https://jsfiddle.net/3kohh4x8/6/)
 
 #### 1. HTML Structure
 
-*This section is needed about `smooth scroll` task. Otherwise you do not need to add the attributes and ids.
+*This section is needed about `smooth scroll` and `highlighter` tasks. Otherwise you do not need to add the attributes and ids.
 
 Add data attributes `data-item` to your menu items, with the name of the menu item.
 Example: `data-item="about"`
@@ -46,7 +46,7 @@ Example: `data-item="about"`
 </nav>
 ```
 
-Add `id` to every section, which will be linked.
+Add `id` to every section, which will be anchored.
 
 ```html
 <section id="about">
@@ -73,19 +73,33 @@ Example of element with normal behaviour and its position after adding class to 
 }
 ```
 
+*This section is needed about `smooth scroll` and `highlighter` tasks. Otherwise you do not need to add the style.
+
+It is only an example to difference the normal menu item and active menu item.
+
+```css
+.main-menu > li > a {
+    color: red;
+}
+
+.main-menu > li > a.active {
+    color: blue;
+}
+```
+
 #### 3. Include jQuery
 
 ```html
 <script src="path-to-your-file/jquery.min.js"></script>
 ```
 
-#### 4. Include plugin - link
+#### 4. Include plugin
+
+You can find it in `assets/js/jquery.stoocky-page.js` or `assets/js/jquery.stoocky-page.min.js`
 
 ```html
 <script src="path-to-your-file/jquery.stoocky-page.min.js"></script>
 ```
-
-*Be sure to add the plugin after jQuery
 
 #### 5. Initialize
 

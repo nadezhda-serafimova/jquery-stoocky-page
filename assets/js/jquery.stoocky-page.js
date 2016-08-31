@@ -1,3 +1,4 @@
+/*! jQuery Stoocky Page Plugin v1.0.0  */
 (function($) {
 
     /*

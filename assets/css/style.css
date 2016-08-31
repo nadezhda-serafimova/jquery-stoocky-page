@@ -110,7 +110,19 @@ body {
     background: #fff;
 }
 .section--basic {
-    background: #ff7b6b;
+    /*background: #ff7b6b;*/
+    background-image: -webkit-gradient(
+        linear,
+        right bottom,
+        left top,
+        color-stop(0, #FFA875),
+        color-stop(1, #FF503D)
+    );
+    background-image: -o-linear-gradient(left top, #FFA875 0%, #FF503D 100%);
+    background-image: -moz-linear-gradient(left top, #FFA875 0%, #FF503D 100%);
+    background-image: -webkit-linear-gradient(left top, #FFA875 0%, #FF503D 100%);
+    background-image: -ms-linear-gradient(left top, #FFA875 0%, #FF503D 100%);
+    background-image: linear-gradient(to left top, #FFA875 0%, #FF503D 100%);
 }
 .section--gray {
     background: #ced9de;
@@ -160,38 +172,38 @@ body {
     color: #560c02;
 }
 
-.cbp-spmenu {
+.main-menu-holder {
     background: #fd543f;
     position: fixed;
 }
-.cbp-spmenu.mobile {
+.main-menu.mobile {
     top: 63px;
 }
-.cbp-spmenu li {
+.main-menu.mobile li {
+    float: none;
+    padding: 0;
     list-style: none;
 }
-.cbp-spmenu a {
+.main-menu.mobile li a {
     display: block;
     color: #fff;
     font-size: 16px;
     line-height: 22px;
+    border-bottom: 1px solid #fff;
+    padding: 1em;
     transition: all .4s ease-in-out;
 }
-.cbp-spmenu a:hover {
+.main-menu.mobile li a:hover {
     color: #560c02;
 }
-.cbp-spmenu a:active {
+.main-menu.mobile li a:active {
     color: #560c02;
 }
-.cbp-spmenu-vertical {
+.main-menu-holder {
     width: 180px;
     height: 100%;
     top: 0;
     z-index: 1000;
-}
-.cbp-spmenu-vertical a {
-    border-bottom: 1px solid #fff;
-    padding: 1em;
 }
 .cbp-spmenu-right {
     right: -180px;
@@ -265,11 +277,11 @@ p {
     }
 }
 
-@media screen and (max-width: 640px) {
+@media screen and (max-width: 800px) {
     .hamburger {
         display: block;
     }
-    .main-menu {
-        /*display: none;*/
+    .main-menu.desktop {
+        display: none;
     }
 }

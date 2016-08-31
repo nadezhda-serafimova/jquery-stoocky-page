@@ -21,6 +21,8 @@ elixir(function(mix) {
 
         .scripts([
             'jquery-1.11.0.min.js',
+            'classie.js',
+            'script.js',
             'jquery.stoocky-page.js',
         ], 'js/script.min.js')
 

@@ -25,7 +25,7 @@ Every from these tasks  are independent. They can be used separate from each oth
 
 #### 1. HTML Structure
 
-This section is needed about `smooth scroll` task. Otherwise you do not need to add the attributes and ids.
+*This section is needed about `smooth scroll` task. Otherwise you do not need to add the attributes and ids.
 
 Add data attributes `data-item` to your menu items, with the name of the menu item.
 Example: `data-item="about"`
@@ -57,7 +57,9 @@ Now every menu item matches its section.
 
 #### 2. CSS - Include the stylesheet
 
-Element to be fixed
+*This section is needed about `sticky element` task. Otherwise you do not need to add the style.
+
+Example of element with normal behaviour and its position after adding class to fix it.
 
 ```css
 .header {
@@ -71,8 +73,6 @@ Element to be fixed
 
 #### 3. Include jQuery
 
-Include the js-files which you can find in the assets folder.
-
 ```html
 <script src="path-to-your-file/jquery.min.js"></script>
 ```
@@ -82,6 +82,8 @@ Include the js-files which you can find in the assets folder.
 ```html
 <script src="path-to-your-file/jquery.stoocky-page.min.js"></script>
 ```
+
+*Be sure to add the plugin after jQuery
 
 #### 5. Initialize
 

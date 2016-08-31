@@ -7,7 +7,7 @@ The plugin combains three specific components for single page front-end:
 
 Every from these tasks  are independent. They can be used separate from each other on the page, together or in combination in two. Here you can see what they actually do together. You can choose which of the features suits to you.
 
-GIF
+![](https://github.com/nadezhda-devlabs/jquery-stoocky-page/blob/master/img/jquery-stoocky-page.gif)
 
 ## Demo
 

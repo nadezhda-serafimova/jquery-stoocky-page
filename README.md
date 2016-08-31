@@ -89,7 +89,7 @@ Example of element with normal behaviour and its position after adding class to 
 
 #### 5. Initialize
 
-At the end of your page you need to initialize ..... by running the following code. Note that all config values are optional and will default as specified below.
+At the end of your page you need to initialize it by running the following code. Note that all config values are optional and will default as specified below.
 
 ```javascript
 $('body').stoockyPage();

@@ -157,3 +157,9 @@ $('body').stoockyPage({
     }
 });
 ```
+
+## Contributing
+
+Open an issue to suggest changes or additions. PRs are welcome.
+
+Thank you! :)

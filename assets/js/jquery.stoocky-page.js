@@ -99,12 +99,22 @@
                 /*
                  * Make props accessible
                  */
-                var prop = getProperties(this, window, document)
+                var prop = getProperties(this, window, document);
+
+                /*
+                 * Extract the header height from the top of the element
+                 */
+                var topEl = prop.topOfEl - prop.headerHeight;
+
+                /*
+                 * Sum the top of the element with the element height
+                 */
+                var elTopAndHeight = prop.topOfEl + prop.еlHeight;
 
                 /*
                  * Highligh the exact menu item, which is on the top of the window screen
                  */
-                if (prop.windowPosition >= (prop.topOfEl - prop.headerHeight) && prop.windowPosition < (prop.topOfEl + prop.еlHeight)) {
+                if (prop.windowPosition >= topEl && prop.windowPosition < elTopAndHeight) {
                     $(settings.itemHighlighter.item).removeClass(settings.itemHighlighter.classToHighlight).each(function(index, element){
                         if ( prop.elId == $(this).attr('data-item')) {
                             $( element ).addClass(settings.itemHighlighter.classToHighlight);
@@ -113,9 +123,14 @@
                 }
 
                 /*
+                 * Sum the offset of the window from the top of the page and the height of the window
+                 */
+                var pageHeight = prop.windowPosition + prop.windowHeight;
+
+                /*
                  * Highlight the last menu item, when it's scrolled to the bottom of the page
                  */
-                if(prop.windowPosition + prop.windowHeight == prop.docHeight) {
+                if(pageHeight == prop.docHeight) {
                     $(settings.itemHighlighter.item).removeClass(settings.itemHighlighter.classToHighlight);
                     $(settings.itemHighlighter.lastItem).addClass(settings.itemHighlighter.classToHighlight);
                 }
@@ -154,7 +169,7 @@
         };
 
         /*
-         * TODO: Extend default plugin settings with new user settings
+         * Extend default plugin settings with new user settings
          */
         if ( options ) {
             $.extend(settings.stickyElem, options.stickyElem);

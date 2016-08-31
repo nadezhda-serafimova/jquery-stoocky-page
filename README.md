@@ -25,6 +25,8 @@ GIF
 
 #### 1. HTML Structure
 
+This section is needed about `smooth scroll` task. Otherwise you do not need to add the attributes and ids.
+
 Add data attributes `data-item` to your menu items, with the name of the menu item.
 Example: `data-item="about"`
 

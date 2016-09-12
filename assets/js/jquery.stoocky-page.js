@@ -8,7 +8,6 @@
 
         var el = $(settings.stickyElem.elToFix);    // Element object
         var elPosition = el.offset();               // Element position
-        var elHeight = el.height();                 // Element height
 
         $(window).on('scroll', function() {
 
@@ -139,7 +138,7 @@
 
         });
 
-    };
+    }
 
     /*
      * jQuery plugin definition
@@ -204,6 +203,6 @@
          */
         return this;
 
-    }
+    };
 
 })(jQuery);

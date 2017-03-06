@@ -96,43 +96,47 @@
 
             $('section').each(function(){
 
-                /*
-                 * Make props accessible
-                 */
-                var prop = getProperties(this, window, document);
+                if ($(this).attr('id') != '') {
 
-                /*
-                 * Extract the header height from the top of the element
-                 */
-                var topEl = prop.topOfEl - prop.headerHeight;
+                    /*
+                     * Make props accessible
+                     */
+                    var prop = getProperties(this, window, document);
 
-                /*
-                 * Sum the top of the element with the element height
-                 */
-                var elTopAndHeight = prop.topOfEl + prop.еlHeight;
+                    /*
+                     * Extract the header height from the top of the element
+                     */
+                    var topEl = prop.topOfEl - prop.headerHeight;
 
-                /*
-                 * Highligh the exact menu item, which is on the top of the window screen
-                 */
-                if (prop.windowPosition >= topEl && prop.windowPosition < elTopAndHeight) {
-                    $(settings.itemHighlighter.item).removeClass(settings.itemHighlighter.classToHighlight).each(function(index, element){
-                        if ( prop.elId == $(this).attr('data-item')) {
-                            $( element ).addClass(settings.itemHighlighter.classToHighlight);
-                        }
-                    });
-                }
+                    /*
+                     * Sum the top of the element with the element height
+                     */
+                    var elTopAndHeight = prop.topOfEl + prop.еlHeight;
 
-                /*
-                 * Sum the offset of the window from the top of the page and the height of the window
-                 */
-                var pageHeight = prop.windowPosition + prop.windowHeight;
+                    /*
+                     * Highligh the exact menu item, which is on the top of the window screen
+                     */
+                    if (prop.windowPosition >= topEl && prop.windowPosition < elTopAndHeight) {
+                        $(settings.itemHighlighter.item).removeClass(settings.itemHighlighter.classToHighlight).each(function(index, element){
+                            if ( prop.elId == $(this).attr('data-item')) {
+                                $( element ).addClass(settings.itemHighlighter.classToHighlight);
+                            }
+                        });
+                    }
 
-                /*
-                 * Highlight the last menu item, when it's scrolled to the bottom of the page
-                 */
-                if(pageHeight == prop.docHeight) {
-                    $(settings.itemHighlighter.item).removeClass(settings.itemHighlighter.classToHighlight);
-                    $(settings.itemHighlighter.lastItem).addClass(settings.itemHighlighter.classToHighlight);
+                    /*
+                     * Sum the offset of the window from the top of the page and the height of the window
+                     */
+                    var pageHeight = prop.windowPosition + prop.windowHeight;
+
+                    /*
+                     * Highlight the last menu item, when it's scrolled to the bottom of the page
+                     */
+                    if(pageHeight == prop.docHeight) {
+                        $(settings.itemHighlighter.item).removeClass(settings.itemHighlighter.classToHighlight);
+                        $(settings.itemHighlighter.lastItem).addClass(settings.itemHighlighter.classToHighlight);
+                    }
+
                 }
             });
 

@@ -96,7 +96,7 @@
 
             $('section').each(function(){
 
-                if ($(this).attr('id') != '') {
+                if ($(this).attr('id')) {
 
                     /*
                      * Make props accessible
